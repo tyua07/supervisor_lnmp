@@ -1,0 +1,31 @@
+
+[program:nginx]
+command=/usr/local/nginx/sbin/nginx -g "daemon off;"
+autostart=true
+autorestart=true
+
+[program:php]
+user = root
+command = /usr/local/php5.6/sbin/php-fpm --nodaemonize
+stdout_logfile=/var/log/supervisor/webserver.log
+stderr_logfile=/var/log/supervisor/webserver.error.log
+autostart=true
+autorestart=true
+
+
+[program:redis]
+command = /usr/local/redis/bin/redis-server /usr/local/redis/redis.conf
+stdout_logfile=/var/log/supervisor/webserver.log
+stderr_logfile=/var/log/supervisor/webserver.error.log
+autostart=true
+autorestart=true
+user=root
+
+[program:mysql]
+user = root
+command = /usr/local/mysql/bin/mysqld --basedir=/usr/local/mysql --datadir=/data/mysql/data --plugin-dir=/usr/local/mysql/lib/plugin --user=mysql --log-error=/data/mysql/data/zaiseouldeMacBook-Pro.local.err --pid-file=/data/mysql/data/zaiseouldeMacBook-Pro.local.pid --socket=/tmp/mysql.sock --port=3306
+stdout_logfile=/var/log/supervisor/webserver.log
+stderr_logfile=/var/log/supervisor/webserver.error.log
+autostart=true
+autorestart=true
+
