@@ -82,6 +82,9 @@ autorestart=true
 user=root
 ```
 
+### 注意
+
+* 请保持这些服务都是前台运行，比如redis.conf 里面的 ```deamonize ``` 必须要是 ``` no ``` （重要）
 
 
 
