@@ -1,5 +1,8 @@
 ## Supervisor LNMP环境 配置信息
-----------------------
+
+### 效果图
+
+![效果图](https://raw.githubusercontent.com/tyua07/supervisor_lnmp/master/images/supervisor.png)
 
 
 ### 安装 Supervisor
