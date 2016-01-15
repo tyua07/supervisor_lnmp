@@ -26,7 +26,7 @@ password=fengqianqian               ; (default is no password (open server))
 
 port|username|password
 ----|--------|-------
-ip和端口，如果是外网访问，则需要改成正式ip，prot则自己配置|登录名|登陆密码
+ip和端口，如果是外网访问，则需要改成正式ip，port则自己配置|登录名|登陆密码
 
 ```
 [include]
